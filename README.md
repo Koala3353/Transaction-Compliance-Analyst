@@ -52,9 +52,9 @@ npm install
 cp .env.local.example .env.local
 ```
 
-4. Add your Gemini API key to `.env.local`:
+4. Add your OpenAI API key to `.env.local`:
 ```
-GEMINI_API_KEY=your_gemini_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 5. Run the development server:
@@ -63,6 +63,18 @@ npm run dev
 ```
 
 6. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🚀 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/transaction-compliance-analyst&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key%20for%20risk%20analysis&envLink=https://platform.openai.com/api-keys)
+
+### Manual Deployment
+
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com) and import your repository
+3. Add the environment variable:
+   - `OPENAI_API_KEY`: Your OpenAI API key
+4. Deploy!
 
 ## 📋 Demo Scenarios
 
@@ -155,12 +167,12 @@ src/
 
 ## 🔧 Technologies
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **AI**: Google Gemini 1.5 Flash
+- **AI**: OpenAI GPT-4o-mini
 - **Validation**: Zod
-- **UUID**: uuid package
+- **Deployment**: Vercel
 
 ## ⚠️ Disclaimer
 
